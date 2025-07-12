@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oli Uddin Siddique | Portfolio</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ───── FIXED HEADER ───── -->
+  <header class="header">
+    <div class="container header-flex">
+      <!-- left group: logo + name -->
+      <div class="header-left">
+        <img src="logo.png" alt="Logo" class="site-logo" />
+        <h1 class="logo-text">Oli Uddin Siddique</h1>
+      </div>
+
+      <!-- right group: nav links -->
+      <nav class="header-right">
+        <ul class="nav-links">
+          <li><a href="#about"   class="active">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#play">Play With Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ───── HERO ───── -->
+  <section class="hero" id="home">
+    <div class="container">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <h2>Hello, I'm <span class="highlight">Oli Uddin Siddique</span></h2>
+      <p>A passionate developer specializing in modern web technologies.</p>
+    </div>
+  </section>
+
+  <!-- ───── ABOUT ───── -->
+  <section id="about" class="section">
+    <div class="container center-text">
+      <h3>About Me</h3>
+      <p>An aspiring game developer and software creator passionate about building interactive experiences that blend creativity with code. From browser-based games to full-scale software projects, I enjoy turning ideas into digital reality. My journey revolves around mastering technologies like HTML, CSS, JavaScript, C#, and Unity, with a strong focus on clean design and engaging gameplay. Whether it's developing mini-games or full applications, I'm always learning and leveling up.</p>
+    </div>
+  </section>
+
+  <!-- ───── SKILLS ───── -->
+  <section id="skills" class="section">
+    <div class="container center-text">
+      <h3>My Skills</h3>
+      <div class="skills-grid">
+        <!-- sample skill cards (add or edit as needed) -->
+        <div class="skill-card" data-desc="Markup language for creating web pages."><i class="fab fa-html5"></i> HTML</div>
+        <div class="skill-card" data-desc="General-purpose programming language known for efficiency."><i class="fas fa-code"></i> C</div>
+        <div class="skill-card" data-desc="Extension of C with object‑oriented features."><i class="fas fa-code"></i> C++</div>
+        <div class="skill-card" data-desc="Style sheet language for designing web pages."><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="skill-card" data-desc="Programming language that adds interactivity to web pages."><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill-card" data-desc="Widely‑used programming language for applications and Android."><i class="fab fa-java"></i> Java</div>
+        <div class="skill-card" data-desc="JavaScript library for building user interfaces."><i class="fab fa-react"></i> React</div>
+        <div class="skill-card" data-desc="JavaScript runtime for backend development."><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="skill-card" data-desc="High‑level programming language for general use."><i class="fab fa-python"></i> Python</div>
+        <div class="skill-card" data-desc="Version control system for tracking changes."><i class="fab fa-git-alt"></i> Git</div>
+        <div class="skill-card" data-desc="Language used to manage and query databases."><i class="fas fa-database"></i> SQL</div>
+        <div class="skill-card" data-desc="Open‑source Unix‑like operating system."><i class="fab fa-linux"></i> Linux</div>
+        <div class="skill-card" data-desc="Ability to solve complex problems effectively."><i class="fas fa-brain"></i> ProblemSolving</div>
+        <div class="skill-card" data-desc="Creating visual content using tools like Photoshop, Illustrator, and Canva."><i class="fas fa-palette"></i> GraphicDesigning</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── PROJECTS ───── -->
+  <section id="projects" class="section">
+    <div class="container center-text">
+      <h3>Projects</h3>
+      <div class="skills-grid">
+        <div class="skill-card project-card">
+          <h4 class="project-title">Gym Management System</h4>
+          <p>A web‑based application to manage gym memberships, staff, schedules, and billing efficiently.</p>
+        </div>
+        <div class="skill-card project-card">
+          <h4 class="project-title">Library Management System</h4>
+          <p>A system for managing books, members, checkouts, and returns—ideal for small to medium libraries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── PLAY WITH ME ───── -->
+  <section id="play" class="section">
+    <div class="container center-text">
+      <h3 style="margin-bottom:40px;">Play With Me</h3>
+      <div class="tictactoe-container">
+        <div class="game-border">
+          <div id="game" class="tictactoe-grid"></div>
+        </div>
+        <div id="result"></div>
+        <button id="restart">Restart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CONTACT ───── -->
+  <section id="contact" class="section">
+    <div class="container center-text">
+      <h3>Contact</h3>
+      <form action="https://formspree.io/f/myzjrlgg" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p class="email-bar">Email: siddiquetamim098@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- ───── SOCIAL LINKS ───── -->
+  <section class="section">
+    <div class="container center-text">
+      <h3>Find Me On</h3>
+      <div class="skills-grid">
+        <div class="skill-card link-card" onclick="window.open('https://github.com/siddique098')">
+          <i class="fab fa-github"></i> GitHub
+        </div>
+        <div class="skill-card link-card" onclick="window.open('https://www.linkedin.com/in/oli-uddin-siddique-36b858374/')">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </div>
+        <div class="skill-card link-card" onclick="window.open('https://twitter.com/yourusername')">
+          <i class="fab fa-twitter"></i> Twitter
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Oli Uddin Siddique. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
