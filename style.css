@@ -229,3 +229,18 @@ body{
 .skill-card{
   width:220px;          /* same visual width as GraphicDesigning */
 }
+/* ───── GLOBAL PNG BG AFTER HERO ───── */
+.main-bg{
+  position:relative;                 /* create context */
+  z-index:1;
+}
+.main-bg::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("my-background.png") center/cover no-repeat fixed;
+  opacity:0.15;                      /* same subtle darkness */
+  z-index:-1;                        /* behind all content */
+  pointer-events:none;
+}
+
